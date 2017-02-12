@@ -1,6 +1,6 @@
 {
   "name": "vue-base64-upload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue base64 upload",
   "main": "src/Base64Upload.vue",
   "scripts": {
@@ -12,9 +12,7 @@
     "babelify": "^7.3.0",
     "uglifyjs": "^2.4.10",
     "vue": "^2.1.10",
-    "vueify": "^9.4.0"
-  },
-  "dependencies": {
+    "vueify": "^9.4.0",
     "browserify": "^14.0.0"
   }
 }
