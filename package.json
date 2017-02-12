@@ -4,12 +4,13 @@
   "description": "Vue base64 upload",
   "main": "src/Base64Upload.vue",
   "scripts": {
-    "build": "cd demo; ../node_modules/.bin/browserify -t babelify -t vueify index.js > build.js"
+    "build": "cd demo; ../node_modules/.bin/browserify -t babelify -t vueify index.js | ../node_modules/.bin/uglifyjs > build.js"
   },
   "author": "wenzhixin2010@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "babelify": "^7.3.0",
+    "uglifyjs": "^2.4.10",
     "vue": "^2.1.10",
     "vueify": "^9.4.0"
   },
