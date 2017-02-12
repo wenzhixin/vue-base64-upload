@@ -39,8 +39,8 @@ npm install vue-base64-upload
 
 ## Example
 
-[Demo](demo)
-[Live Example]()
+* [Demo](demo)
+* [Live Example](https://wenzhixin.github.com/vue-base64-upload/demo)
 
 ## Documentation
 
