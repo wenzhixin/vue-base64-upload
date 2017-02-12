@@ -2,21 +2,33 @@
 
 vue-base64-upload is an ui component library base on Vue.js(2.x).
 
-```html
-<base64-upload :imageSrc="user.png" @change="onChangeImage"></base64-upload>
-```
+# Usage
 
-```js
-onChangeImage(file) {
-  /*
-  {
-    size: 55832,
-    filetype: 'image/jpeg',
-    filename: 'profile.jpg',
-    base64:   '/9j/4AAQS...'
+```html
+<template>
+  <base64-upload imageSrc="user.png" @change="onChangeImage"></base64-upload>
+</template>
+<script>
+import Base64Upload from 'vue-base64-upload'
+
+export default {
+  components: {
+    Base64Upload
+  },
+  methods: {
+    onChangeImage(file) {
+      /*
+      {
+        size: 93602,
+        filetype: 'image/jpeg',
+        filename: 'user.jpg',
+        base64:   '/9j/4AAQSkZJRg...'
+      }
+      */
+    }
   }
-  */
 }
+</script>
 ```
 
 ## Installation
@@ -27,7 +39,8 @@ npm install vue-base64-upload
 
 ## Example
 
-See [jsFiddle]()
+[Demo](demo)
+[Live Example]()
 
 ## Documentation
 

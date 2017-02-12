@@ -4,8 +4,16 @@
   "description": "Vue base64 upload",
   "main": "src/Base64Upload.vue",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd demo; ../node_modules/.bin/browserify -t babelify -t vueify index.js > build.js"
   },
   "author": "wenzhixin2010@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "vue": "^2.1.10",
+    "vueify": "^9.4.0"
+  },
+  "dependencies": {
+    "browserify": "^14.0.0"
+  }
 }
